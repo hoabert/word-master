@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 5rem auto;
+}
+
+.grid {
+    border-top: 1px solid #ccc;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.word-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+.letter {
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    display: flex;
+    font-size: 2rem;
+    height: 5rem;
+    justify-content: center;
+    width: 5rem;
+}
+
+.correct-letter {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.incorrect-letter {
+    background-color: #777;
+    color: #fff;
+}
+
+.letter-is-in-word {
+    background-color: #cba21c;
+    color: #fff;
+}
+
+.invalid-word {
+    background-color: red;
+    color: #fff;
+}
